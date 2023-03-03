@@ -15,21 +15,14 @@ This backend should give the users capabilities to;
 
 Open this live Vercel link to access the website: https://phase-3-project-react-client.vercel.app/.
 
-This will run your server on port
-[http://localhost:9292](http://localhost:9292).
-
-Use [Postman][postman download] to test your endpoints.
-
-- Use `binding.pry` to debug your requests on the server. It's very helpful to use a
-  `binding.pry` in your controller within a route to see what `params` are being
-  sent.
+The project is using this live backend URL: https://g-iv-back-end-production.up.railway.app/.
 
 ### Fetch Example
 
 This is an example that shows how you can make to this sinatra backend using your react front end
 
 ```js
-fetch("http://localhost:9292/test")
+fetch("https://g-iv-back-end-production.up.railway.app/test")
   .then((r) => r.json())
   .then((data) => console.log(data));  
 ```
