@@ -27,7 +27,7 @@ class ApplicationController < Sinatra::Base
   end
 
   # editing a charity
-  patch "/charities/:id" do
+  patch "/charities/:id/edit" do
     char = Charity.find(params[:id])
     char.update(
       name: params[:name],
