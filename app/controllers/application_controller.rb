@@ -45,6 +45,12 @@ class ApplicationController < Sinatra::Base
     donation.to_json
   end
 
+    # displaying all donations
+    get "/donations/:id" do
+      donation = Donation.find(params[:id])
+      donation.to_json
+    end
+
   # adding a donation
   post "/donations" do
     donation = Donation.create(
